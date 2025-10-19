@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/background_primary">
 
         <!-- Header Section -->
         <TextView
@@ -19,8 +20,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dashboard"
-            android:textSize="24sp"
+            android:textSize="28sp"
             android:textStyle="bold"
+            android:textColor="@color/text_primary"
             android:layout_marginBottom="24dp"/>
 
         <!-- Today's Overview Card -->
@@ -28,21 +30,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/background_secondary">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Today's Overview"
                     android:textSize="14sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
@@ -50,8 +53,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 meals logged"
-                    android:textSize="24sp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
+                    android:textColor="@color/text_primary"
                     android:layout_marginBottom="4dp"/>
 
                 <TextView
@@ -60,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:text="Last updated 2h ago"
                     android:textSize="12sp"
-                    android:textColor="#999999"/>
+                    android:textColor="@color/text_tertiary"/>
 
             </LinearLayout>
 
@@ -71,8 +75,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Recent Insights"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/text_primary"
             android:layout_marginBottom="12dp"/>
 
         <!-- Meal Card 1 - Lunch -->
@@ -80,14 +85,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:cardBackgroundColor="@color/background_secondary">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -101,14 +107,15 @@
                         android:layout_weight="1"
                         android:text="Lunch"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="12:30 PM"
                         android:textSize="12sp"
-                        android:textColor="#666666"/>
+                        android:textColor="@color/text_secondary"/>
 
                 </LinearLayout>
 
@@ -122,6 +129,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Good Protein"
+                        android:textColor="@color/badge_positive_text"
                         android:background="@drawable/badge_green"
                         android:paddingStart="12dp"
                         android:paddingEnd="12dp"
@@ -134,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="High Sodium"
+                        android:textColor="@color/badge_alert_text"
                         android:background="@drawable/badge_red"
                         android:paddingStart="12dp"
                         android:paddingEnd="12dp"
@@ -152,14 +161,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:cardBackgroundColor="@color/background_secondary">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -173,14 +183,15 @@
                         android:layout_weight="1"
                         android:text="Breakfast"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8:15 AM"
                         android:textSize="12sp"
-                        android:textColor="#666666"/>
+                        android:textColor="@color/text_secondary"/>
 
                 </LinearLayout>
 
@@ -194,6 +205,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="High Fiber"
+                        android:textColor="@color/badge_positive_text"
                         android:background="@drawable/badge_green"
                         android:paddingStart="12dp"
                         android:paddingEnd="12dp"
@@ -206,6 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Low Iron"
+                        android:textColor="@color/badge_caution_text"
                         android:background="@drawable/badge_yellow"
                         android:paddingStart="12dp"
                         android:paddingEnd="12dp"
@@ -226,7 +239,10 @@
             android:layout_height="wrap_content"
             android:text="Log New Meal"
             android:textSize="16sp"
-            android:padding="16dp"/>
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_primary"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"/>
 
     </LinearLayout>
 

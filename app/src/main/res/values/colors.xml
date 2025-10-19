@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Palette 1: Muted Earthy Tones (Pinks/Mauves) -->
+    <color name="peach_light">#FFCDB2</color>
+    <color name="peach_medium">#FFB4A2</color>
+    <color name="dusty_rose">#E5989B</color>
+    <color name="mauve">#B5838D</color>
+    <color name="slate_purple">#6D6875</color>
+
+    <!-- Palette 2: Warm Neutral Tones (Browns/Greens) -->
+    <color name="brown_dark">#582F0E</color>
+    <color name="brown_medium">#7F4F24</color>
+    <color name="brown_warm">#936639</color>
+    <color name="tan_warm">#A68A64</color>
+    <color name="beige_warm">#B6AD90</color>
+    <color name="sage_light">#C2C5AA</color>
+    <color name="olive_muted">#A4AC86</color>
+    <color name="olive_medium">#656D4A</color>
+    <color name="olive_dark">#414833</color>
+    <color name="green_dark">#333D29</color>
+
+    <!-- Functional Colors (Semantic naming) -->
+    <!-- Backgrounds -->
+    <color name="background_primary">#EAE9DD</color>
+    <color name="background_secondary">#DDD9C8</color>
+    <color name="background_card">#E0DFD3</color>
+    <color name="background_elevated">#FFFEF8</color>
+
+    <!-- Text -->
+    <color name="text_primary">#333D29</color>
+    <color name="text_secondary">#656D4A</color>
+    <color name="text_tertiary">#A68A64</color>
+
+    <!-- Primary Actions -->
+    <color name="primary">#B5838D</color>
+    <color name="primary_dark">#9A6F7A</color>
+    <color name="primary_light">#C99AA5</color>
+
+    <!-- Accent -->
+    <color name="accent">#E5989B</color>
+    <color name="accent_light">#F0B4B7</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_good_bg">#E8F5E9</color>
+    <color name="badge_good_text">#2E7D32</color>
+    <color name="badge_good_border">#81C784</color>
+
+    <color name="badge_warning_bg">#FFF3E0</color>
+    <color name="badge_warning_text">#E65100</color>
+    <color name="badge_warning_border">#FFB74D</color>
+
+    <color name="badge_high_bg">#FCE4EC</color>
+    <color name="badge_high_text">#C2185B</color>
+    <color name="badge_high_border">#F06292</color>
+
+    <color name="badge_info_bg">#E8EAF6</color>
+    <color name="badge_info_text">#3F51B5</color>
+    <color name="badge_info_border">#7986CB</color>
+
+    <!-- Using your palette for badges (alternative) -->
+    <color name="badge_positive_bg">#EEF3E8</color>
+    <color name="badge_positive_text">#414833</color>
+    <color name="badge_positive_border">#A4AC86</color>
+
+    <color name="badge_caution_bg">#FDF3EB</color>
+    <color name="badge_caution_text">#7F4F24</color>
+    <color name="badge_caution_border">#A68A64</color>
+
+    <color name="badge_alert_bg">#FFF0F0</color>
+    <color name="badge_alert_text">#B5838D</color>
+    <color name="badge_alert_border">#E5989B</color>
+
+    <!-- Dividers & Borders -->
+    <color name="divider">#E0E0E0</color>
+    <color name="border_light">#D4CFC0</color>
+
+    <!-- States -->
+    <color name="ripple_effect">#1AB5838D</color>
+
+    <!-- System Colors (for Material components) -->
+    <color name="colorPrimary">#B5838D</color>
+    <color name="colorPrimaryDark">#9A6F7A</color>
+    <color name="colorAccent">#E5989B</color>
 </resources>
