@@ -1,9 +1,9 @@
 package com.syeda.nutrition_tracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,10 +22,9 @@ public class MainActivity extends AppCompatActivity {
         btnLogNewMeal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: Navigate to Log Food screen
-                Toast.makeText(MainActivity.this,
-                        "Log Food screen coming soon!",
-                        Toast.LENGTH_SHORT).show();
+                // Navigate to Log Food screen
+                Intent intent = new Intent(MainActivity.this, LogFoodActivity.class);
+                startActivity(intent);
             }
         });
     }
