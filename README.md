@@ -95,11 +95,11 @@ Traditional nutrition apps often focus heavily on calorie counting and numerical
 ## 📱 Screenshots
 
 ### Home Screen (Dashboard)
-![Home Screen](docs/screenshots/home-screen.png)
+![Home Screen](Docs/screenshots/home-screen.png)
 *Dashboard showing recent meals with qualitative nutrient badges*
 
 ### Log Food Screen
-![Log Food Screen](docs/screenshots/log-food-screen.png)
+![Log Food Screen](Docs/screenshots/log-food-screen.png)
 *Options for logging food: barcode scan, database search, or AI meal builder*
 
 > **Note:** Screenshots will be added as development progresses.
