@@ -1,14 +1,16 @@
 package com.syeda.nutrition_tracker;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnLogNewMeal;
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager;
+    private ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,16 +18,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialize views
-        btnLogNewMeal = findViewById(R.id.btnLogNewMeal);
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager = findViewById(R.id.viewPager);
 
-        // Set click listener for Log New Meal button
-        btnLogNewMeal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to Log Food screen
-                Intent intent = new Intent(MainActivity.this, LogFoodActivity.class);
-                startActivity(intent);
-            }
-        });
+        // Set up adapter
+        adapter = new ViewPagerAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        // Link TabLayout and ViewPager2
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    // Set tab text based on position
+                    switch (position) {
+                        case 0:
+                            tab.setText("Home");
+                            break;
+                        case 1:
+                            tab.setText("Log Food");
+                            break;
+                        case 2:
+                            tab.setText("Profile");
+                            break;
+                    }
+                }).attach();
     }
-} 
+
+    // Method to switch tabs programmatically (used by HomeFragment)
+    public void switchToTab(int position) {
+        viewPager.setCurrentItem(position, true);
+    }
+}
