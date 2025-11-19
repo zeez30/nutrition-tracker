@@ -81,4 +81,13 @@
     <color name="colorPrimary">#B5838D</color>
     <color name="colorPrimaryDark">#9A6F7A</color>
     <color name="colorAccent">#E5989B</color>
+
+    <!-- Material Design 3 Colors for Auth Screens -->
+    <!-- These map to your existing palette -->
+    <color name="surface">@color/background_elevated</color>
+    <color name="on_surface">@color/text_primary</color>
+    <color name="on_surface_variant">@color/text_secondary</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
